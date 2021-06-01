@@ -52,7 +52,7 @@ CONST_OPTIMIZER = 'adamax'
 model = Sequential()
 model.add(Dense(DENSE_1, activation=ACTIVATION_1, input_dim=5))
 model.add(Dense(DENSE_2, activation='softmax'))
-model.compile(loss='binary_crossentropy',
+model.compile(loss='categorical_crossentropy',
               optimizer=CONST_OPTIMIZER,
               metrics=['accuracy'])
 
